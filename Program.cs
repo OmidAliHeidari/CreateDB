@@ -11,7 +11,7 @@ public class ShopApp : DbContext
     public DbSet<OrderProduct> OrderProducts { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseMySql("server=localhost;port=3306;database=ShopApp;user=root;password=Oah77502236.;",
+        optionsBuilder.UseMySql("server=localhost;port=3306;database=ShopApp;user=root;password=***********;",
             new MySqlServerVersion(new Version(8, 0, 2)));
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
